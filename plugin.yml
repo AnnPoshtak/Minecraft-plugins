@@ -1,0 +1,11 @@
+name: BestPlugin
+version: 1.0
+main: ua.anna.Main
+api-version: 1.20
+commands:
+  cat:
+    description: spawn 10 cats
+    usage: /cat
+  heal_all:
+    description: Restores health and hunger
+    usage: /heal_all
