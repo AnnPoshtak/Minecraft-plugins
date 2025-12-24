@@ -8,15 +8,17 @@
 ## 📌 Overview
 
 This project is a collection of custom Minecraft server plugins written in **Java**, designed for **Paper/Spigot-compatible servers**.
-The main goal of the project is to experiment with server-side logic, command handling, and Bukkit/Paper API features.
+The main goal of the project is to experiment with server-side logic, command handling, and gameplay enhancements.
 
 ---
 
-## 🗂 Project Structure
+## ✨ Gameplay Mechanics
 
-* `commands/` — directory containing implementations of server commands.
-* `Main.java` — the main plugin entry point. Responsible for initialization and command registration.
-* `plugin.yml` - file with settings and command descriptions for correct configuration
+### 🐾 Petting Animals
+You can now show love to the creatures in your world!
+* **How it works:** Press **Shift + Left Click** (or Right Click) on any animal or mob.
+* **Effect:** The mob will show heart particles or happy effects to indicate it's pleased.
+* **Safety:** While sneaking (Shift), your clicks **will not deal damage** to the animal, making it safe to interact with them without accidental harm.
 
 ---
 
@@ -29,13 +31,21 @@ The main goal of the project is to experiment with server-side logic, command ha
 
 ---
 
+## 🗂 Project Structure
+
+* `commands/` — directory containing implementations of server commands.
+* `Main.java` — the main plugin entry point. Responsible for initialization and registration.
+* `plugin.yml` — file with settings and command descriptions.
+
+---
+
 ## 🚧 Planned Features
 
-The following commands are currently under development and will be available in future releases:
+The following features are currently under development:
 
 - [ ] **/new_home** 🏠 — automatically builds a small box-shaped house with a bed and a chest inside.
-- [ ] **/born** 🧪 — simulates a pregnancy mechanic with special effects (slowness, increased hunger loss). After completion, a "child" entity appears (villager, cat, or dog).
-- [ ] **/kit** 🎒 — gives a starter kit: stone pickaxe, stone sword, 64 carrots, and a full set of iron armor.
+- [ ] **/born** 🧪 — simulates a pregnancy mechanic with special effects.
+- [ ] **/kit** 🎒 — gives a starter kit (tools, armor, and food).
 - [ ] **/run** ⚡ — grants a speed boost effect for 3 minutes.
 
 ---
@@ -44,7 +54,6 @@ The following commands are currently under development and will be available in 
 
 * Minecraft server running **Paper** or **Spigot**.
 * **Java 17+** (recommended for modern Minecraft versions).
-* Proper permissions configuration on the server side.
 
 ---
 
@@ -52,25 +61,11 @@ The following commands are currently under development and will be available in 
 
 1. Compile the plugin into a `.jar` file.
 2. Move the generated file into the server’s `plugins/` directory.
-3. Restart the server (hot reload is not recommended for production environments).
-
----
-
-## 🔐 Configuration & Permissions
-
-At the moment, the plugin does not include a dedicated configuration file. Planned improvements include:
-
-* Fine-grained permissions for each command.
-* Enabling or disabling individual plugin modules.
-* Customizable command parameters (mob count, effect duration, etc.).
+3. Restart the server.
 
 ---
 
 ## 📈 Project Status
 
 > **🚀 Active development**
-> This project is primarily intended for learning and experimentation with plugin architecture, server performance, and API usage. Breaking changes may occur between versions.
-
-### ⚠ Notes
-
-This project is created for **educational and experimental purposes**. It is not recommended to use it on large public servers without proper testing.
+> This project is created for **educational and experimental purposes**. It is not recommended to use it on large public servers without proper testing.
